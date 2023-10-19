@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+  margin: 0px;
+  overflow: hidden;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none; 
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+#clicked-img{
+  width: 100%;
+}
+#clicked-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+.image-mini {
+  width: 10vmin !important;
+  height: 16vmin !important;
+  transform: translate(0%, -50%) !important; 
+  object-fit: cover;
+}
+
+.image-track-mini {
+  gap: 1vmin !important;
+  top: 80% !important;
+  left: 75% !important;
+}
